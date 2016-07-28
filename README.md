@@ -27,18 +27,24 @@ Sample implementations will be covered by various tutorials over time.
 ## Terms
 
 **Component:** A component is a logical unit of composable and independently scaling unit in the architecture.
-In some cases the term *component* is synonymous with a microservice, in others another open source project could be dropped in with a thin wrapper. This document deliberately avoid those terms to keep the concepts separate from implementation.
+In some cases the term *component* is synonymous with a microservice, in others another open source project could be dropped in with a thin wrapper. This document deliberately avoids those terms to keep concepts separate from implementation.
+
+**Client:** A client is a uniquely identifiable user of this system. It is important to note the distinction between a client and a single connection.
+
+Eg: A client can be a human with their app/web on a single connection or a third party service with multiple horizontally scalable instances connecting with the same *identity*.
+
+**Vendor:** A vendor of the system is an identity with access to a group of clients.
 
 (TK)
 
 ## Components
 
-* Socket manager / API gateway
+* [Connection manager (Socket / HTTP)](./ConnectionManager.md)
 
-* Message Buffer / Queues
+* Message Buffer (Inbox / Queues)
 
-* Exchange / Routing
+* Backend (Exchange / Routing / Web Server)
 
-* Persistence
+* Persistence (logging / long term data store)
 
-* State Manager
+* State Manager ( user sessions / presence / roster)
