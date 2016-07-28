@@ -16,7 +16,7 @@ Multiple mechanisms for authentication will be supported.
 
 ### Data Agnostic
 
-Apart from identity and authentication, this layer should not care about the type of data passing through it. It is all binary blobs.
+Apart from identity and authentication, this layer should not care about the type of data passing through it. It is all streaming binary information for this component.
 
 
 ### Protocol agnostic
