@@ -5,9 +5,9 @@ This is a Working Draft of the Intent, Scope, Concepts, Specification, and Compo
 
 ## History
 
-We (@subramaniank, @sandeep4 and I) have worked on messaging for the last year at MagicTiger and later MagicX.
+We (@subramaniank, @sandeep4 and @ofpiyush) have worked on messaging for the last year at MagicTiger and later MagicX.
 
-Over the course of the past year, we've had to put in a number of hacks to make messaging just work.
+Over the course of the past year, we've had to put in a number of hacks to make messaging work.
 
 We'll use the lessons learnt as a starting point here.
 
@@ -24,9 +24,9 @@ Through our components, we aim to provide smaller composable units that can be u
 
 Sample implementations will be covered by various tutorials over time.
 
-## Terms
+## Definitions
 
-**Component:** A component is a logical unit of composable and independently scaling unit in the architecture.
+**Component:** A component is a logical unit of composable and independently scalable architecture.
 In some cases the term *component* is synonymous with a microservice, in others another open source project could be dropped in with a thin wrapper. This document deliberately avoids those terms to keep concepts separate from implementation.
 
 **Client:** A client is a uniquely identifiable user of this system. It is important to note the distinction between a client and a single connection.
