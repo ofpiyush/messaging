@@ -5,7 +5,7 @@ This is a Working Draft of the Intent, Scope, Concepts, Specification, and Compo
 
 ## History
 
-We (@subramaniank, @sandeep4 and @ofpiyush) have worked on messaging for the last year at MagicTiger and later MagicX.
+We ([@subramaniank](https://github.com/subramaniank), [@sandeep4](https://github.com/Sandeep4) and [@ofpiyush](https://github.com/ofpiyush)) have worked on messaging for the last year at MagicTiger and later MagicX.
 
 Over the course of the past year, we've had to put in a number of hacks to make messaging work.
 
