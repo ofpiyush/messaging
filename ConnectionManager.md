@@ -8,6 +8,7 @@ The connection manager component, as the name suggests, fills the role of managi
 
 ### Identity
 
+This component should tie into a pre-existing/external Identity service.
 
 ### Authentication
 
@@ -23,10 +24,4 @@ Apart from identity and authentication, this layer should not care about the typ
 
 The goal is to allow bi-directional communication with clients.
 
-Implementations can use TCP, HTTP2, and websockets. HTTP APIs for vendors will be supported with extensions.
-
-## Applicability
-
-### Messaging
-
-### Web server
+Implementations can use TCP, HTTP2, and websockets. HTTP APIs for vendors may be supported with extensions.

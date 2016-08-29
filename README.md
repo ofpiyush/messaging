@@ -1,6 +1,6 @@
-# Messaging
+# Daakia
 
-This is a Working Draft of the Intent, Scope, Concepts, Specification, and Components of Messaging (working name TBD).
+This is a Working Draft of the Intent, Scope, Concepts, Specification, and Components of Daakia.
 
 
 ## History
@@ -39,12 +39,37 @@ Eg: A client can be a human with their app/web on a single connection or a third
 
 ## Components
 
-* [Connection manager (Socket / HTTP)](./ConnectionManager.md)
+* [Connection manager](./ConnectionManager.md)
 
 * Message Buffer (Inbox / Queues)
 
-* [Backend (Exchange / Routing / Web Server)](./Backend.md)
+* [Broker (Exchange/Routing)](./Broker.md)
+
+* [Backend (Bots/ Web Server)](./Backend.md)
 
 * Persistence (logging / long term data store)
 
 * State Manager ( user sessions / presence / roster)
+
+
+
+## Applicability
+
+### Messaging
+MQTT support is planned, other protocols (AMQP 0-9-1 in particular) may be supported in the future.
+
+### Web server
+
+An equivalent of django channels with [ASGI](http://channels.readthedocs.io/en/latest/asgi.html) looks plausible.
+
+Tree and graph access implementations like GraphQL and Falcor respectively work well with message passing.
+
+### RPC / ESB
+Using the service discovery component with an RPC protocol (JSON-RPC, PROTO-RPC, gRPC etc) should be relatively easy.
+
+## Implementation
+
+Due to time constraints, only messaging implementation over MQTT / a superset of MQTT (the DAAK protocol?) are planned.
+We will consider other implementations as and when our workload permits.
+
+If someone is interested in writing clients/implementation/wrappers for other softwares/protocols, please open an issue.
