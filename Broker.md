@@ -1,6 +1,6 @@
 # Broker
 
-A broker can be seen as a special router + translator which may or may not have an arbitrarily complex [Backend (bots/webserver)](./Backend) behind it.
+A broker can be seen as a special router + translator which may or may not have an arbitrarily complex [Backend (bots/webserver)](./Backend.md) behind it.
 
 ### Responsibilities / Goals
 
